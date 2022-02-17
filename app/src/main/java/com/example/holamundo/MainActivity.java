@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
+import com.example.holamundo.ui.login.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void muestraVentanaLogin(View view){
-        Intent ventana = new Intent(this, LogginActivity.class);
+        Intent ventana = new Intent(this, LoginActivity.class);
         startActivity(ventana);
     }
 }
